@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_instance" "main" {
   count = var.instance_count
-  ami = var.ami_id
+  ami = var.ami_id 
   instance_type = var.instance_type
   tenancy = var.tenancy
 
